@@ -6,6 +6,7 @@
 
 :root {
   --white: 255, 255, 255;
+  --whitecheck: 255, 255, 255, 0.8;
   --red: 229, 57, 53;
   --orange: 251, 140, 0;
   --yellow: 253, 216, 53;
@@ -67,32 +68,42 @@
   border: 1px solid rgb(var(--theme-color));
 }
 
-input[type="radio"]{
-    width: 40px;
-    height: 40px;
-    margin: 0.5rem;
+input[type="radio"] {
+  appearance: none;
+  border-radius: 50%;
+  margin: 5px;
+  height: 40px;
+  width: 40px;
+  background-clip: content-box;
+  padding: 5px;
 }
 
-input[type="radio"]#white{
-    accent-color: rgb(var(--theme-color));
+input[type="radio"]#white {
+  background-color: white;
+  border: 2px solid white;
 }
 
-input[type="radio"]#red{
-    accent-color: rgb(var(--theme-color));
+input[type="radio"]#red {
+  background-color: red;
+  border: 2px solid red;
 }
 
-input[type="radio"]#orange{
-    accent-color: rgb(var(--theme-color));
+input[type="radio"]#orange {
+  background-color: orange;
+  border: 2px solid orange;
 }
 
-input[type="radio"]#yellow{
-    accent-color: rgb(var(--theme-color));
+input[type="radio"]#yellow {
+  background-color: yellow;
+  border: 2px solid yellow;
 }
 
-input[type="radio"]#blue{
-    accent-color: rgb(var(--theme-color));
+input[type="radio"]#blue {
+  background-color: blue;
+  border: 2px solid blue;
 }
 
-input[type="radio"]#green{
-    accent-color: rgb(var(--theme-color));
+input[type="radio"]#green {
+  background-color: green;
+  border: 2px solid green;
 }
