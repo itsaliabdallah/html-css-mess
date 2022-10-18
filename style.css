@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+:root {
+  --white: 255, 255, 255;
+  --red: 229, 57, 53;
+  --orange: 251, 140, 0;
+  --yellow: 253, 216, 53;
+  --blue: 30, 136, 229;
+  --green: 67, 160, 71;
+
+  --theme-color: var(--white);
+}
+
+.radio #site-wrapper {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "🎨 🎨"
+    "⬅️ 🔍"
+    "⬅️ 🟥"
+    "⬅️ 🟥"
+    "⬅️ 🟥"
+    "⬅️ 🦶";
+}
+
+#color-picker {
+  grid-area: 🎨;
+}
+
+#menu {
+  grid-area: ⬅️;
+  border: #ffffff80 solid 1px;
+}
+
+.side-button {
+  color: rgba(var(--theme-color));
+  font-size: large;
+  background-color: rgb(131, 131, 131, 0.2);
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 0.5rem;
+  border: none;
+}
+
+.side-button:hover,
+.side-button:focus {
+  border: 1px solid rgb(var(--theme-color));
+}
+
+input[type="radio"]{
+    width: 40px;
+    height: 40px;
+}
