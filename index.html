@@ -14,16 +14,21 @@
   </head>
 
   <body>
+    <header>
+        <h1>alou.sh</h1>
+    </header>
     <div id="site-wrapper">
+
       <div id="color-picker">
-        <input type="radio" name="theme" value="white" />
-        <input type="radio" name="theme" value="red" />
-        <input type="radio" name="theme" value="orange" />
-        <input type="radio" name="theme" value="yellow" />
-        <input type="radio" name="theme" value="blue" />
-        <input type="radio" name="theme" value="green" />
+        <input type="radio" name="theme" value="white" id="white" />
+        <input type="radio" name="theme" value="red" id="red" />
+        <input type="radio" name="theme" value="orange" id="orange" />
+        <input type="radio" name="theme" value="yellow" id="yellow" />
+        <input type="radio" name="theme" value="blue" id="blue" />
+        <input type="radio" name="theme" value="green" id="green" />
       </div>
-      <div id="menu">
+
+      <div id="side-menu">
         <button type="button" class="side-button">
           <i class="fa-solid fa-house"></i>
         </button>
@@ -37,6 +42,11 @@
           <i class="fa-solid fa-comment"></i>
         </button>
       </div>
+
+      <div id="search-bar">
+        <input type="text" placeholder="search" class="search-box">
+      </div>
+
     </div>
   </body>
 </html>
